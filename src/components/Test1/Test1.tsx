@@ -41,10 +41,12 @@ const Arrow1: any = styled("img")({
 });
  
 function Test1(props: Test1Props): JSX.Element {
-  const {fns} = useTest1();
+  const {data, fns} = useTest1();
     return (
     <Test11  className={props.className}   >
-      <Arrow1 onClick={fns.onCow(a: vacaType, c: cType)} onMouseOut={fns.chuppa}  src={Arrow1Image} alt={"Arrow 1"}/>
+      {(data.isCow) &&
+        <Arrow1 onClick={fns.onCow(a: vacaType, c: cType)} onMouseOut={fns.chuppa}  src={Arrow1Image} alt={"Arrow 1"}/>
+      }
     </Test11>
   );
 }
