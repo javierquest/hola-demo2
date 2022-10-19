@@ -22,8 +22,10 @@
 
 
 
+
 export interface Test1Props {
   className?: any;
   prop1: cow;
+  prop2:string: any;
 };
 
