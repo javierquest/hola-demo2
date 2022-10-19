@@ -12,9 +12,7 @@
 *
 **********************************************************************/
 
-import Ellipse1Image from 'src/assets/images/test1_Ellipse_1.svg';
-import HelloWorldImage from 'src/assets/images/test1_HELLO_WORLD.svg';
-import Rectangle1Image from 'src/assets/images/test1_Rectangle_1.png';
+import Arrow1Image from 'src/assets/images/test1_Arrow_1.png';
 import { styled } from '@mui/material/styles';
 import { Test1Props } from 'src/types';
 import useTest1 from 'src/components/Test1/useTest1';
@@ -26,45 +24,27 @@ const Test11: any = styled("div")({
   isolation: `isolate`,  
   flexDirection: `row`,  
   width: "100%",  
-  height: `446px`,  
+  height: `857px`,  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
   padding: `0px`,  
   boxSizing: `border-box`,  
 });
   
-const Ellipse1: any = styled("img")({  
-  height: `auto`,  
-  width: "234px",  
+const Arrow1: any = styled("img")({  
+  height: `0px`,  
+  width: `108px`,  
   position: `absolute`,  
-  left: `23px`,  
-  top: `25px`,  
+  left: `169px`,  
+  top: `69px`,  
   cursor: `pointer`,  
-});
-  
-const HelloWorld: any = styled("img")({  
-  height: `auto`,  
-  width: "90px",  
-  position: `absolute`,  
-  left: `421px`,  
-  top: `42px`,  
-});
-  
-const Rectangle1: any = styled("img")({  
-  height: `119px`,  
-  width: `119px`,  
-  position: `absolute`,  
-  left: `266px`,  
-  top: `223px`,  
 });
  
 function Test1(props: Test1Props): JSX.Element {
   const {fns} = useTest1();
     return (
     <Test11  className={props.className}   >
-      <Ellipse1 onClick={fns.handle}  src={Ellipse1Image} alt={"Ellipse 1"}/>
-      <HelloWorld  src={HelloWorldImage} alt={"HELLO WORLD"}/>
-      <Rectangle1  src={Rectangle1Image} alt={"Rectangle 1"}/>
+      <Arrow1 onClick={fns.click}  src={Arrow1Image} alt={"Arrow 1"}/>
     </Test11>
   );
 }

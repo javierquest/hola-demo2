@@ -8,7 +8,8 @@ const useTest1 = () => {
   let data: any = {};
   const handle = (): any => {};
 
-  let fns: any = {handle};
+  const click = (): any => {};
+  let fns: any = {handle, click};
   return {data, fns};
 }
 
