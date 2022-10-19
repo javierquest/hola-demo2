@@ -24,6 +24,6 @@
 
 export interface Test1Props {
   className?: any;
-  prop1: any;
+  prop1: cow;
 };
 
