@@ -44,7 +44,7 @@ function Test1(props: Test1Props): JSX.Element {
   const {fns} = useTest1();
     return (
     <Test11  className={props.className}   >
-      <Arrow1 onClick={fns.click}  src={Arrow1Image} alt={"Arrow 1"}/>
+      <Arrow1 onClick={fns.click(a,b,c,d)}  src={Arrow1Image} alt={"Arrow 1"}/>
     </Test11>
   );
 }
