@@ -17,7 +17,7 @@ import HelloWorldImage from 'src/assets/images/test1_HELLO_WORLD.svg';
 import Rectangle1Image from 'src/assets/images/test1_Rectangle_1.png';
 import { styled } from '@mui/material/styles';
 import { Test1Props } from 'src/types';
-
+import useTest1 from 'src/components/Test1/useTest1';
  
 const Test11: any = styled("div")({  
   backgroundColor: `rgba(255, 255, 255, 1)`,  
@@ -39,6 +39,7 @@ const Ellipse1: any = styled("img")({
   position: `absolute`,  
   left: `23px`,  
   top: `25px`,  
+  cursor: `pointer`,  
 });
   
 const HelloWorld: any = styled("img")({  
@@ -58,9 +59,10 @@ const Rectangle1: any = styled("img")({
 });
  
 function Test1(props: Test1Props): JSX.Element {
-  return (
+  const {fns} = useTest1();
+    return (
     <Test11  className={props.className}   >
-      <Ellipse1  src={Ellipse1Image} alt={"Ellipse 1"}/>
+      <Ellipse1 onClick={fns.handle}  src={Ellipse1Image} alt={"Ellipse 1"}/>
       <HelloWorld  src={HelloWorldImage} alt={"HELLO WORLD"}/>
       <Rectangle1  src={Rectangle1Image} alt={"Rectangle 1"}/>
     </Test11>
