@@ -9,7 +9,8 @@ const useTest1 = () => {
   const handle = (): any => {};
 
   const onClick = (param1:any,  param2: any,  param3: any,  param4: any): any => {};
-  let fns: any = {handle, click};
+  const click = (param1: any, param2: any, param3: any, param4: any): any => {};
+  let fns: any = {handle, click, click};
   return {data, fns};
 }
 
