@@ -15,7 +15,7 @@ const useRepeat3 = () => {
   const onVisible = (): void => {
     console.log('fff')
   };
-   const onVisible = (): void => {};
+  const onCow = (): any => {};
 
   let fns: {onVisible: () => void} = {onVisible};
   return {data, fns};
