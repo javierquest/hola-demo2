@@ -519,7 +519,7 @@ const Repeat31: any = styled(Repeat3)(({ theme }: any) =>({
  
 function Products1(props: Products1Props): JSX.Element {
   
-  const {data, fns} = useProducts1();
+  const {fns} = useProducts1();
     return (
     <Products11  className={props.className}   >
       <Frame3 >
@@ -607,7 +607,7 @@ function Products1(props: Products1Props): JSX.Element {
             </Features>
           </Details>
         </Col2>
-        {(data.onCow = fns.onTrunch != data.onma1) &&
+        {(fns.onVisible) &&
           <Repeat31   />
         }
       </Frame3>
