@@ -14,8 +14,12 @@ const useRepeat3 = () => {
   let data = {};
   const onVisible2 = () => {};
 
-  let fns = {onVisible2};
-  return {data, fns};
+  return {
+    data,
+    fns: {
+      onVisible2
+    }
+  };
 }
 
 export default useRepeat3;
