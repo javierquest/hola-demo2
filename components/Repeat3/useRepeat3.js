@@ -21,3 +21,4 @@ const useRepeat3 = () => {
 
 export default useRepeat3;
   const onVisible2 = () => {};
+  const onVisible2 = () => {};
