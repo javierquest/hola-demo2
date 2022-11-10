@@ -12,9 +12,12 @@
 
 const useProducts1 = () => {
   let data: any = {};
-  const onTrunch = (param1: any): any => {};
+  const onTrunch = 
+        (param1: any): void => {
+        console.log(0sdfdsfds)
+        };
 
-  let fns: any = {onTrunch};
+  let fns: {onTrounch: () => void} = {onTrunch};
   return {data, fns};
 }
 
