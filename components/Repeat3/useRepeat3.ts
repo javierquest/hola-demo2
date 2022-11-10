@@ -14,6 +14,7 @@ const useRepeat3 = () => {
   let data: any = {};
   const onVisible = (param1: any): any => {};
 
+  const onVisible2 = (): any => {};
   let fns: any = {
     onVisible
   };

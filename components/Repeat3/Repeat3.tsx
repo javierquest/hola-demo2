@@ -40,12 +40,12 @@ const ProductCard11: any = styled(ProductCard1)(({ theme }: any) =>({
  
 function Repeat3(props: Repeat3Props): JSX.Element {
   
-  const {data, fns} = useRepeat3();
+  const {fns} = useRepeat3();
     return (
     <Repeat31  className={props.className}   >
       {undefined && undefined.map((undefined: any, index: number) => {
         return (
-          (fns.onVisible(prop.data)) &&
+          (fns.onVisible2) &&
             <ProductCard11  key={index}  onClick={() => {  101794386107989Api.start({ ...{"opacity":0}, delay: 0 });  }} />
         );
       })}
