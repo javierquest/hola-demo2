@@ -21,4 +21,3 @@ const useRepeat3 = () => {
 }
 
 export default useRepeat3;
-  const onVisible = (param1: any): any => {};
