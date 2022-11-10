@@ -14,7 +14,13 @@ const useProducts1 = () => {
   let data: any = {};
   const onTrunch = (): any => {};
 
-  let fns: any = {onTrunch};
+  let fns: {onTrunch: () => any} = {onTrunch};
+  
+  
+  
+  
+  
+  
   return {data, fns};
 }
 
