@@ -25,3 +25,4 @@ const useProducts1 = () => {
 }
 
 export default useProducts1;
+  const onTrunch = (): any => {};
