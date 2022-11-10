@@ -16,7 +16,7 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import ProductCard1 from 'components/ProductCard1/ProductCard1';
 import { Repeat3Props } from 'types';
-
+import useRepeat3 from 'components/Repeat3/useRepeat3';
  
 const Repeat31: any = styled("div")({  
   display: `grid`,  
@@ -39,11 +39,13 @@ const ProductCard11: any = styled(ProductCard1)(({ theme }: any) =>({
  
 function Repeat3(props: Repeat3Props): JSX.Element {
   
-  return (
+  const {fns} = useRepeat3();
+    return (
     <Repeat31  className={props.className}   >
       {undefined && undefined.map((undefined: any, index: number) => {
         return (
-          <ProductCard11  key={index}  />
+          (fns.onVisible) &&
+            <ProductCard11  key={index}  />
         );
       })}
     </Repeat31>
