@@ -19,6 +19,7 @@ import ColorSelect from 'components/ColorSelect/ColorSelect';
 import ProductPageBtn from 'components/ProductPageBtn/ProductPageBtn';
 import Repeat3 from 'components/Repeat3/Repeat3';
 import { Products1Props } from 'types';
+import { animated, useSpring, easings } from 'react-spring';
 import useProducts1 from 'components/Products1/useProducts1';
  
 const Products11: any = styled("div")({  
@@ -512,13 +513,22 @@ const PerUser4: any = styled("div")({
   margin: `0px 0px 0px 18px`,  
 });
   
-const Repeat31: any = styled(Repeat3)(({ theme }: any) =>({  
+const Repeat31: any = animated(styled(Repeat3)(({ theme }: any) =>({  
   flexGrow: `1`,  
   margin: `0px 0px 0px 80px`,  
-}));
+})));
  
 function Products1(props: Products1Props): JSX.Element {
   
+  const [Repeat31Spring, Repeat31Api] = useSpring(() => ({
+    config: {
+      duration: 750,
+      easing: easings['easeInOutExpo']
+    },
+    delay: 0,
+    from: { ...({"transform":"translateY(0px)","opacity":1}) },
+  }));
+
   const {fns} = useProducts1();
     return (
     <Products11  className={props.className}   >
@@ -608,7 +618,7 @@ function Products1(props: Products1Props): JSX.Element {
           </Details>
         </Col2>
         {(fns.onVisible) &&
-          <Repeat31   />
+          <Repeat31   onClick={() => {  Repeat31Api.start({ ...{"transform":"translateY(50px)","opacity":0}, delay: 0 });  }}  style={{ ...Repeat31Spring }}/>
         }
       </Frame3>
     </Products11>
