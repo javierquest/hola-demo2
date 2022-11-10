@@ -25,19 +25,6 @@
 
 
 
-export interface Products1Props {
-  className?: any;
-};
-
-
-
-
-
-
-
-
-
-
 
 export interface Repeat3Props {
   className?: any;
@@ -55,9 +42,26 @@ export interface Repeat3Props {
 
 
 
+
+export interface Products1Props {
+  className?: any;
+};
+
+
+
+
+
+
+
+
+
+
+
+
 export interface Products3Props {
   className?: any;
 };
+
 
 
 
@@ -87,9 +91,11 @@ export interface Frame1Props {
 
 
 
+
 export interface Frame3Props {
   className?: any;
 };
+
 
 
 

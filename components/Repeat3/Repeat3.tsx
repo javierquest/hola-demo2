@@ -16,6 +16,7 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import ProductCard1 from 'components/ProductCard1/ProductCard1';
 import { Repeat3Props } from 'types';
+import { animated, useSpring, easings } from 'react-spring';
 import useRepeat3 from 'components/Repeat3/useRepeat3';
  
 const Repeat31: any = styled("div")({  
@@ -45,7 +46,7 @@ function Repeat3(props: Repeat3Props): JSX.Element {
       {undefined && undefined.map((undefined: any, index: number) => {
         return (
           (fns.onVisible(prop.data)) &&
-            <ProductCard11  key={index}  />
+            <ProductCard11  key={index}  onClick={() => {  101794386107989Api.start({ ...{"opacity":0}, delay: 0 });  }} />
         );
       })}
     </Repeat31>
