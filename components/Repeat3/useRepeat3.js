@@ -20,3 +20,4 @@ const useRepeat3 = () => {
 }
 
 export default useRepeat3;
+  const onVisible2 = () => {};
