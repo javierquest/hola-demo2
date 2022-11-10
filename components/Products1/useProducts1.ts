@@ -22,3 +22,4 @@ const useProducts1 = () => {
 }
 
 export default useProducts1;
+  const onTrunch = (param1: any): any => {};

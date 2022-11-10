@@ -607,7 +607,7 @@ function Products1(props: Products1Props): JSX.Element {
             </Features>
           </Details>
         </Col2>
-        {(data.onCow = fns.onTrunch != data.onmau) &&
+        {(data.onCow = fns.onTrunch != data.onma1) &&
           <Repeat31   />
         }
       </Frame3>
