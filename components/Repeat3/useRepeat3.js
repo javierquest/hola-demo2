@@ -12,9 +12,9 @@
 
 const useRepeat3 = () => {
   let data = {};
-  const onVisible2 = () => {};
+  const handleVisible2 = () => {};
 
-  const fns = {onVisible2};
+  const fns = {onVisible2: handleVisible2};
   return {data,fns};
 }
 
