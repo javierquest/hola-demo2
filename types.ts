@@ -13,27 +13,33 @@
 *
 **********************************************************************/
 
+
 export interface Frame1Props {
   className?: any;
 };
 
-export interface Products1Props {
-  className?: any;
-};
 
 export interface Repeat3Props {
   className?: any;
 };
 
+
 export interface Products3Props {
   className?: any;
 };
+
 
 export interface Frame3Props {
   className?: any;
 };
 
+
 export interface Frame4Props {
   className?: any;
 };
 
+
+
+export interface Products1Props {
+  className?: any;
+};
