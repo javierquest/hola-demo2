@@ -12,10 +12,9 @@
 
 const useRepeat3 = () => {
   let data = {};
-  const handleVisible2 = () => {};
 
   const onVisible2 = () => {};
-  const fns = {onVisible2: handleVisible2, onVisible2};
+  const fns = {onVisible2};
   return {data,fns};
 }
 
