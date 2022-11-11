@@ -9,12 +9,11 @@
 *
 *
 **********************************************************************/
+import useOtherHook; from './useOtherHook';
 
 const useRepeat3 = () => {
-  let data = {};
-
-  const onVisible2 = () => {};
-  const fns = {onVisible2};
+  const [data, fns] = useOtherHook();
+  
   return {data,fns};
 }
 
